@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", cursive;
+    background: repeating-linear-gradient(
+        to bottom,
+        #0f0a1e,
+        #0f0a1e 2px,
+        #140e29 2px,
+        #140e29 4px
+    );
+}
+
+#board {
+    display: flex;
+    justify-content: center;
+}
+.slot {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.hole {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 40px solid #4405fc;
+    transform: translate(-30px, -30px);
+}
+.player1 {
+    background-color: #fdff2a;
+}
+.player2 {
+    background-color: #df4a42;
+}
+#modal {
+    position: absolute;
+    top: 54.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border: 8px solid rgb(202, 227, 245);
+    background-color: white;
+    font-family: "Press Start 2P", cursive;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+    text-align: center;
+    visibility: hidden;
+}
+#modal:hover {
+    opacity: 1;
+}
+#modal p {
+    font-size: 25px;
+    text-align: center;
+}
+#closeModal {
+    position: absolute;
+    left: 49.5%;
+    top: 78.8%;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    font-family: "Press Start 2P", cursive;
+}
+#closeModal:hover {
+    transform: translate(0, -5px);
+}
+#resetButton {
+    cursor: pointer;
+    position: absolute;
+    top: 78.8%;
+    font-size: 12px;
+    font-family: "Press Start 2P", cursive;
+}
+#resetButton:hover {
+    transform: translate(0, -5px);
+}
+button {
+    border: 4.5px solid rgb(202, 227, 245);
+    background: none;
+    font-size: 20px;
+    padding: 5px 24px 5px 24px;
+    display: flex;
+    justify-content: center;
+}
+div .animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#currentPlayer {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    height: 90px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe,
+        4px 0 0 #4405fc;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
