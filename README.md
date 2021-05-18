@@ -11,4 +11,4 @@ There are not available scripts in this project.
 
 # Design decisions made
 
-Since everyone knows the gmae I wanted to create it with arcade look.
+Since everyone knows the gmae I wanted to create it with arcade look, nothing fancy.
